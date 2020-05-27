@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: venkateshgithubpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: venkateshgithubpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: venkateshgithubpipelinesjavascriptdocker 
+          image: venky89contregistry.azurecr.io/venkateshgithubpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
